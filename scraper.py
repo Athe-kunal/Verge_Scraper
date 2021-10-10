@@ -13,6 +13,7 @@ import os
 import constants as const
 
 class Verge_scraper(webdriver.Chrome):
+    #Pass your driver path at driver_path here
     def __init__(self, year,month,keyword='',driver_path="D:\Free Code Camp\Selenium\chromedriver_win64",teardown=False):
     
         self.driver_path = driver_path
