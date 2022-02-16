@@ -129,13 +129,7 @@ class Verge_scraper(webdriver.Chrome):
         print(table)
         self.teardown = True
 
-        
-
-
-
-        
-        
-        
+             
             
                         
 
