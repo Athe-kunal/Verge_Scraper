@@ -2,8 +2,7 @@ import time
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.common.keys import Keys
+
 from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -11,6 +10,8 @@ from prettytable import PrettyTable
 from time import strptime
 import os
 import constants as const
+# from selenium.webdriver.common.action_chains import ActionChains
+# from selenium.webdriver.common.keys import Keys
 
 class Verge_scraper(webdriver.Chrome):
     #Pass your driver path at driver_path here
