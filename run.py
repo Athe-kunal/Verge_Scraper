@@ -1,6 +1,7 @@
 from scraper import Verge_scraper
 
 
+
 # Checking linting
 #Let's see if the linting is working or not
 try:

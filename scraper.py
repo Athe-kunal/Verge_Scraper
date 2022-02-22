@@ -2,7 +2,6 @@ import time
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
 from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -22,6 +21,7 @@ class Verge_scraper(webdriver.Chrome):
         os.environ['PATH'] += self.driver_path
         options = webdriver.ChromeOptions()
         options.add_experimental_option('excludeSwitches',['enable-logging'])
+        
         super(Verge_scraper,self).__init__(options=options)
 
         self.year = year
