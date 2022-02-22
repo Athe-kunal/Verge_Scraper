@@ -14,7 +14,7 @@ import constants as const
 
 class Verge_scraper(webdriver.Chrome):
     #Pass your driver path at driver_path here
-    def __init__(self, year,month,keyword='',driver_path="D:\Free Code Camp\Selenium\chromedriver_win64",teardown=False):
+    def __init__(self, year,month,keyword='',driver_path=r"D:\Free Code Camp\Selenium\chromedriver_win64",teardown=False):
     
         self.driver_path = driver_path
         self.teardown = teardown
@@ -70,7 +70,7 @@ class Verge_scraper(webdriver.Chrome):
         while done:
             try:
                 self.scrolling_func()
-            except:
+            except ValueError:
                 print('Whattt')
                 done = False
     
